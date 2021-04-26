@@ -5,7 +5,10 @@ import LocaleReceiver from 'antd/es/locale-provider/LocaleReceiver';
 import Modal from 'antd/es/modal';
 import Slider from 'antd/es/slider';
 import './index.less';
+//@ts-ignore
 import ImageBlobReduce from 'image-blob-reduce';
+//@ts-ignore
+import Pica from 'pica';
 
 const pkg = 'antd-img-crop';
 const noop = () => {};
@@ -168,7 +171,8 @@ const ImgCrop = forwardRef((props, ref) => {
             let finalFile;
 
             if (resizeMaxSize) {
-              const reduce = new ImageBlobReduce();
+              const pica = Pica();
+              const reduce = new ImageBlobReduce({ pica });
               finalFile = await reduce.toBlob(file, { max: resizeMaxSize });
               finalFile.name = file.name;
               finalFile.lastModifiedDate = new Date();

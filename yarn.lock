@@ -2026,6 +2026,13 @@ ignore@^4.0.6:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
+image-blob-reduce@^2.2.2:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/image-blob-reduce/-/image-blob-reduce-2.2.3.tgz#b5be0ee5dfbcd6a827edab27a051887be77ada77"
+  integrity sha512-VZTYIQ4x8F+gNn4KKP6us5ASkv65FyHNQT0TLuVbnqsfcvbSDwFekraiz81B14e0AX5i2P5osUxyUT8fUTwMzQ==
+  dependencies:
+    pica "^6.1.1"
+
 image-size@~0.5.0:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
